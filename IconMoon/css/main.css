@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+/*START ICOMOON*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?yw4t2u');
+  src:  url('../fonts/icomoon.eot?yw4t2u#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?yw4t2u') format('truetype'),
+    url('../fonts/icomoon.woff?yw4t2u') format('woff'),
+    url('../fonts/icomoon.svg?yw4t2u#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+  font-family: 'icomoon';
+  color:white;
+  margin-right: -10px;
+}
+.icon-music:before {
+  content: "\e911";
+  font-family: 'icomoon';
+  color:white;
+  margin-right: -10px;
+
+}
+.icon-cart:before {
+  content: "\e93a";
+  font-family: 'icomoon';
+  color:white;
+  margin-right: -10px;
+
+}
+.icon-phone:before {
+  content: "\e942";
+  font-family: 'icomoon';
+  color:white;
+  margin-right: -10px;
+
+}
+.icon-html-five:before {
+  content: "\eae4";
+  font-family: 'icomoon';
+  color:white;
+  margin-right: -10px;
+
+}
+ /* END ICOMOON*/
+    
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+  .navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #badc58;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    padding: 20px;
+    font-size:1.5em;
+    
+
+}
+.nav:hover{
+  color: #000;
+}
+
+.nav{
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 20%;
+  font-weight: 600;
+  transition: .9s ease-in-out;
+  font-family: 'roboto';
+
+
+
+
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+  padding-right: 10px;
+}
+.logo{
+  font-family: 'Raleway';
+  flex: 1 1 auto;
+  margin-left: 10%;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+  opacity: 0.6;
+  transition: 0.3s linear;
+
+}
+.logo:hover {
+  opacity: 5;
+  color: black;
+}
+
+.logo span{
+   color: #686de0;
+}
+
+.nav li + li {
+  padding-left: 20px;
+}
+
+.nav [class^="icon-"]::before {
+  margin-right: 10px;
+}

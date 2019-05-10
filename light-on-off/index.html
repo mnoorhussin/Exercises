@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <style>
+
+    .btn{
+      margin-left: 640px;
+    }
+    #bulb{
+      max-width: 1000px;
+      max-height:250px ;
+      margin-left: 600px;
+
+    }
+  </style>
+<body>
+  <img id="bulb" src="img/off.png">
+  <br><br><br> 
+<div class="btn">
+  <button onclick="light(1)">ON</button>
+  <button onclick="light(0)">OFF</button>
+</div>
+
+
+
+  <script>
+    function light(value)
+  {
+      var pic;
+       if(value == 0)
+       {
+       pic="img/off.png";
+       }
+       else{
+       pic="img/on.png";
+       }
+    document.getElementById('bulb').src=pic;
+  
+  }
+  </script>
+</body>
+</html>
